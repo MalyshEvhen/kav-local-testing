@@ -14,10 +14,10 @@ for %%i in (0 1 2) do (
 :: Run a docker compose up command with --build flag
 docker compose up --build
 
-:: Optionally, you can remove the cloned repositories after running the command
-:: for %%i in (0 1 2 3) do (
-::     set "repo_name=!repos[%%i]:~26,-4!"
-::     rmdir /s /q "!repo_name!"
-:: )
+:: Removing the cloned repositories after running the command
+ for %%i in (0 1 2 3) do (
+     set "repo_name=!repos[%%i]:~26,-4!"
+     rmdir /s /q "!repo_name!"
+ )
 
 endlocal

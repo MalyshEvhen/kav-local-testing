@@ -3,14 +3,24 @@
 By executing runner scripts you clone all 'Kavaleridze' repositories and deploy the project locally on your machine.
 
 ### Downloaded repos
+
  - [Kavaleridze Backend](https://github.com/baza-trainee/kavaleridze-backend)
  - [Kavaleridze Frontend](https://github.com/baza-trainee/kavaleridze)
  - [Kavaleridze Admin](https://github.com/baza-trainee/kavaleridze-admin)
 
 ### Executed command
+
 ```bash
 docker compose up --build
 ```
+
+and after execution
+
+```bash
+docker compose down
+```
+After that local repos are removed.
+
 
 #### HOW TO USE:
 

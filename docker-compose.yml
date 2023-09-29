@@ -16,6 +16,8 @@ services:
     build: kavaleridze-admin/.
     environment:
       VITE_SERVER_URL: 'http://api:8080'
+    ports:
+      - '5174:5174'
     depends_on:
       - api
     restart: on-failure

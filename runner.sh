@@ -9,8 +9,8 @@ done
 
 docker compose up --build
 
-# Optionally, you can remove the cloned repositories after running the command
-# for repo in "${repos[@]}"; do
-#   repo_name=$(basename "$repo" .git)
-#   rm -rf "$repo_name"
-# done
+# Removing the cloned repositories after running the command
+for repo in "${repos[@]}"; do
+  repo_name=$(basename "$repo" .git)
+  rm -rf "$repo_name"
+done
