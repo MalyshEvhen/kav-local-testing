@@ -14,12 +14,18 @@ By executing runner scripts you clone all 'Kavaleridze' repositories and deploy 
 docker compose up --build
 ```
 
-and after execution
+And after execution press  `Ctrl + c`
 
 ```bash
 docker compose down
 ```
 After that local repos are removed.
+
+### Links
+ - [localhost:8080](localhost:8080) - Kavaleridze website
+ - [localhost:5174](localhost:5174) - Admin panel
+ - [localhost:8081/swagger-ui/index.html](localhost:8081/swagger-ui/index.html) - Swagger-ui
+ - [localhost:8081/v3/api-docs](localhost:8081/v3/api-docs) - Open-API documentation
 
 
 #### HOW TO USE:
