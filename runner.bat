@@ -17,9 +17,9 @@ docker compose up --build
 docker compose down
 
 :: Removing the cloned repositories after running the command
- for %%i in (0 1 2 3) do (
-     set "repo_name=!repos[%%i]:~26,-4!"
-     rmdir /s /q "!repo_name!"
- )
+for %%i in (0 1 2 3) do (
+    set "repo_name=!repos[%%i]:~26,-4!"
+    rmdir /s /q "!repo_name!"
+)
 
 endlocal
