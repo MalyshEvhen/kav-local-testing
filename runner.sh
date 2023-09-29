@@ -9,6 +9,8 @@ done
 
 docker compose up --build
 
+docker compose down
+
 # Removing the cloned repositories after running the command
 for repo in "${repos[@]}"; do
   repo_name=$(basename "$repo" .git)
