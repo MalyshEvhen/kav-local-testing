@@ -22,10 +22,10 @@ docker compose down
 After that local repos are removed.
 
 ### Links
- - [localhost:8080](localhost:8080) - Kavaleridze website
- - [localhost:5174](localhost:5174) - Admin panel
- - [localhost:8081/swagger-ui/index.html](localhost:8081/swagger-ui/index.html) - Swagger-ui
- - [localhost:8081/v3/api-docs](localhost:8081/v3/api-docs) - Open-API documentation
+ - [localhost:8080](http://localhost:8080) - Kavaleridze website
+ - [localhost:5174](http://localhost:5174) - Admin panel
+ - [localhost:8081/swagger-ui/index.html](http://localhost:8081/swagger-ui/index.html) - Swagger-ui
+ - [localhost:8081/v3/api-docs](http://localhost:8081/v3/api-docs) - Open-API documentation
 
 
 #### HOW TO USE:
