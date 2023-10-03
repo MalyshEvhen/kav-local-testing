@@ -8,18 +8,6 @@ By executing runner scripts you clone all 'Kavaleridze' repositories and deploy 
  - [Kavaleridze Frontend](https://github.com/baza-trainee/kavaleridze)
  - [Kavaleridze Admin](https://github.com/baza-trainee/kavaleridze-admin)
 
-### Executed command
-
-```bash
-docker compose up --build
-```
-
-And after execution press  `Ctrl + c`
-
-```bash
-docker compose down
-```
-After that local repos are removed.
 
 ### Links
  - [localhost:8080](http://localhost:8080) - Kavaleridze website
@@ -34,7 +22,24 @@ After that local repos are removed.
     - clone the repo to you local machine
     - change mode of script to executable by running this cmd `chmod +x runner.sh`
     - and execute script by command `./runner.sh`
+    - Do not close terminal while application running
+    - After usage press Ctrl+C in terminal
     
     WINDOWS:
     - clone the repo to local machine
-    - run runner.bat by double click 
+    - run runner.bat by double click
+    - Do not close terminal while application running
+    - After usage press Ctrl+C in terminal
+
+### Executed command
+
+```bash
+docker compose up --build
+```
+
+And after execution press  `Ctrl + c`
+
+```bash
+docker compose down
+```
+After that local repos are removed.
