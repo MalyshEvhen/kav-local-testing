@@ -2,15 +2,6 @@ version: '3.9'
 
 services:
 
-  nginx:
-    container_name: 'kavaleridze-proxy'
-    build: nginx/.
-    ports:
-      - '80:80'
-    depends_on:
-      - api
-    restart: on-failure
-
   admin:
     container_name: 'kavaleridze-admin-ui'
     build: kavaleridze-admin/.
