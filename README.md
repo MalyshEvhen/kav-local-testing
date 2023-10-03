@@ -1,4 +1,4 @@
-### REPOSITORY STORE NGINX PROXY SETTINGS AND RUNNER SCRIPTS FOR KAVALERIDZE PROJECT
+### REPOSITORY STORE DOCKER COMPOSE FILE AND RUNNER SCRIPTS FOR KAVALERIDZE PROJECT
 
 By executing runner scripts you clone all 'Kavaleridze' repositories and deploy the project locally on your machine.
 
