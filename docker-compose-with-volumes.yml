@@ -43,5 +43,9 @@ services:
     image: 'redis/redis-stack:7.2.0-v0'
     ports:
       - '8001:8001'
+    volumes:
+      - redis_data:/data
     restart: on-failure
     
+volumes:
+  redis_data:
