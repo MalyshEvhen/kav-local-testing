@@ -10,10 +10,10 @@ By executing runner scripts you clone all 'Kavaleridze' repositories and deploy 
 
 
 ### Links
- - [localhost:8080](http://localhost:8080) - Kavaleridze website
- - [localhost:5174](http://localhost:5174) - Admin panel
- - [localhost:8081/swagger-ui/index.html](http://localhost:8081/swagger-ui/index.html) - Swagger-ui
- - [localhost:8081/v3/api-docs](http://localhost:8081/v3/api-docs) - Open-API documentation
+ - [localhost:8080](http://127.0.0.1:8080) - Kavaleridze website
+ - [localhost:5174](http://127.0.0.1:5174) - Admin panel
+ - [localhost:8081/swagger-ui/index.html](http://127.0.0.1:8081/swagger-ui/index.html) - Swagger-ui
+ - [localhost:8081/v3/api-docs](http://127.0.0.1:8081/v3/api-docs) - Open-API documentation
 
 
 #### HOW TO USE:
