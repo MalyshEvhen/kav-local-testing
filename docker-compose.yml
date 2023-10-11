@@ -4,9 +4,12 @@ services:
 
   admin:
     container_name: 'kavaleridze-admin-ui'
-    build: kavaleridze-admin/.
+    build:
+      context: kavaleridze-admin/.
+      args:  
+        - SERVER_URL=http://127.0.0.1:8081/api
     environment:
-      SERVER_URL: http://localhost:8081/api
+      NODE_ENV: 'production'
     ports:
       - '5174:80'
     depends_on:
