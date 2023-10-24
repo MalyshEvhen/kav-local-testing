@@ -1,33 +1,10 @@
 version: '3.9'
 
 services:
-
-  admin:
-    container_name: 'kavaleridze-admin-ui'
-    build: kavaleridze-admin/.
-    environment:
-      SERVER_URL: http://localhost:8081/api
-    ports:
-      - '5174:80'
-    depends_on:
-      - api
-    restart: on-failure
-
-
-  web:
-    container_name: 'kavaleridze-web-ui'
-    build: kavaleridze/.
-    environment:
-      VITE_SERVER_URL: 'http://localhost:8081'
-    ports:
-      - '8080:8080'
-    depends_on:
-      - api
-    restart: on-failure
   
   api:
-    container_name: 'kavaleridze-api-server'
-    build: kavaleridze-backend/.
+    container_name: 'museum-api-server'
+    build: museum-backend/.
     environment:
       SPRING_DATA_REDIS_HOST: redis
       MAIL_USER: 'museum_kav_dev@meta.ua'
@@ -39,7 +16,7 @@ services:
     restart: on-failure
 
   redis:
-    container_name: 'kavaleridze-db'
+    container_name: 'museum-db'
     image: 'redis/redis-stack:7.2.0-v0'
     ports:
       - '8001:8001'

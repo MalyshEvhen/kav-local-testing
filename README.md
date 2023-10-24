@@ -4,7 +4,7 @@ By executing runner scripts you clone all 'Kavaleridze' repositories and deploy 
 
 ### Downloaded repos
 
- - [Kavaleridze Backend](https://github.com/baza-trainee/kavaleridze-backend)
+ - [Kavaleridze Backend](https://github.com/web-synergy/museum-back.git)
  - [Kavaleridze Frontend](https://github.com/baza-trainee/kavaleridze)
  - [Kavaleridze Admin](https://github.com/baza-trainee/kavaleridze-admin)
 
