@@ -4,7 +4,7 @@ services:
   
   api:
     container_name: 'museum-api-server'
-    build: museum-backend/.
+    build: museum-back/.
     environment:
       SPRING_DATA_REDIS_HOST: redis
       MAIL_USER: 'museum_kav_dev@meta.ua'
