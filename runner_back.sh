@@ -6,4 +6,4 @@ docker compose --file docker-compose-backend.yml up --build
 
 docker compose --file docker-compose-backend.yml down
 
-rm -rf museum-backend
+rm -rf museum-back
