@@ -10,4 +10,4 @@ docker compose --file docker-compose-backend.yml up --build
 docker compose --file docker-compose-backend.yml down
 
 :: Removing the cloned repository after running the command
-rmdir /s /q museum-backend
+rmdir /s /q museum-back
