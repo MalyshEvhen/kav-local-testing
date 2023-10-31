@@ -9,6 +9,7 @@ services:
       SPRING_DATA_REDIS_HOST: redis
       MAIL_USER: 'museum_kav_dev@meta.ua'
       MAIL_PASSWORD: '!MUS!&2023!kav'
+      ORIGIN_URI: 'https://museum-admin-weld.vercel.app'
     ports:
       - '8081:8080'
     depends_on:
