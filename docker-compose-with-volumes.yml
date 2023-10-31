@@ -20,7 +20,9 @@ services:
     container_name: 'museum-db'
     image: 'redis/redis-stack:7.2.0-v0'
     ports:
-      - '8001:8001'
+      - '8001:8001'    
+    environment:
+      REDIS_ARGS: '--appendonly yes'
     volumes:
       - redis_data:/data
     restart: on-failure
