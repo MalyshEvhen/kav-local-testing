@@ -1,9 +1,13 @@
 #!/bin/bash
 
-git clone -b dev https://github.com/web-synergy/museum-back.git
+git clone -b feature/arm64v8-support--users-crud-v1 https://github.com/web-synergy/museum-back.git
+git clone -b main https://github.com/web-synergy/museum-main.git
+git clone -b main https://github.com/web-synergy/museum-admin.git
 
-docker compose --file docker-compose-backend.yml up --build
+cp ./Dockerfile ./museum-main
+cp ./Dockerfile ./museum-admin
 
-docker compose --file docker-compose-backend.yml down
+cp -r ./docker ./museum-main
+cp -r ./docker ./museum-admin
 
-rm -rf museum-back
+docker compose up --build

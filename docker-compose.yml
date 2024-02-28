@@ -18,18 +18,18 @@ services:
     container_name: "museum-website"
     build: museum-main/.
     environment:
-      VITE_SERVER_URL: "http://localhost:8081"
+      SERVER_URL: "http://127.0.0.1:8081"
     ports:
-      - "80:8080"
+      - "80:80"
     restart: on-failure
 
   admin:
     container_name: "museum-admin-panel"
     build: museum-admin/.
     environment:
-      VITE_SERVER_URL: "http://localhost:8081"
+      SERVER_URL: "http://127.0.0.1:8081"
     ports:
-      - "8080:8080"
+      - "8080:80"
     restart: on-failure
 
   redis:

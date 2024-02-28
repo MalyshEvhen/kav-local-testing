@@ -6,7 +6,7 @@ WORKDIR /app
 COPY . /app
 
 RUN npm install
-RUN VITE_SERVER_URL=${SERVER_URL} npm run build
+RUN VITE_SERVER_URL=http://127.0.0.1:8081/api npm run build
 
 FROM nginx
 EXPOSE 80
