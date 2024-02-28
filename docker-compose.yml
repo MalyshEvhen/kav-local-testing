@@ -1,0 +1,40 @@
+version: "3.9"
+
+services:
+  api:
+    container_name: "museum-api-server"
+    build: museum-back/.
+    environment:
+      SPRING_DATA_REDIS_HOST: redis
+      MAIL_USER: "museum_kav_dev@meta.ua"
+      MAIL_PASSWORD: "!MUS!&2023!kav"
+    ports:
+      - "8081:8080"
+    depends_on:
+      - redis
+    restart: on-failure
+
+  main:
+    container_name: "museum-website"
+    build: museum-main/.
+    environment:
+      VITE_SERVER_URL: "http://localhost:8081"
+    ports:
+      - "80:8080"
+    restart: on-failure
+
+  admin:
+    container_name: "museum-admin-panel"
+    build: museum-admin/.
+    environment:
+      VITE_SERVER_URL: "http://localhost:8081"
+    ports:
+      - "8080:8080"
+    restart: on-failure
+
+  redis:
+    container_name: "museum-db"
+    image: "redis/redis-stack:7.2.0-v0"
+    ports:
+      - "8001:8001"
+    restart: on-failure
