@@ -11,8 +11,8 @@ xcopy .\Dockerfile .\museum-main\
 xcopy .\Dockerfile .\museum-admin\
 
 :: Copy `docker` dir recursevly to `museum-main` and `museum-admin` dirs
-xcopy /s .\docker\ .\museum-main\
-xcopy /s .\docker\ .\museum-admin\
+xcopy /s .\docker\ .\museum-main\docker\
+xcopy /s .\docker\ .\museum-admin\docker\
 
 :: Run a docker compose up command with --build flag
 docker compose up --build
